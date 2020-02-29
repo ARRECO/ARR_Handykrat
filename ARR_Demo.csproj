@@ -1,0 +1,481 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52BFB425-6B67-4905-93C7-C19C4B28428A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARR_Demo</RootNamespace>
+    <AssemblyName>ARR_Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44328</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="backblue.gif" />
+    <Content Include="cookies.txt" />
+    <Content Include="fade.gif" />
+    <Content Include="handy-kart.com\index.html" />
+    <Content Include="handy-kart.com\index.php\about-us.html" />
+    <Content Include="handy-kart.com\index.php\about-us\index.html" />
+    <Content Include="handy-kart.com\index.php\bag-test-2.html" />
+    <Content Include="handy-kart.com\index.php\careers\index.html" />
+    <Content Include="handy-kart.com\index.php\catalogsearch\advanced\index.html" />
+    <Content Include="handy-kart.com\index.php\checkout\cart\index.html" />
+    <Content Include="handy-kart.com\index.php\contact\index.html" />
+    <Content Include="handy-kart.com\index.php\csmarketplace\account\forgotpassword\index.html" />
+    <Content Include="handy-kart.com\index.php\csmarketplace\account\login\frontend\base\default\images\ced\csmarketplace\error_msg_icon.html" />
+    <Content Include="handy-kart.com\index.php\csmarketplace\account\login\frontend\base\default\images\ced\csmarketplace\frontend\base\default\images\ced\csmarketplace\error_msg_icon.html" />
+    <Content Include="handy-kart.com\index.php\csmarketplace\account\login\frontend\base\default\images\ced\csmarketplace\frontend\base\default\images\ced\csmarketplace\success_msg_icon.html" />
+    <Content Include="handy-kart.com\index.php\csmarketplace\account\login\frontend\base\default\images\ced\csmarketplace\success_msg_icon.html" />
+    <Content Include="handy-kart.com\index.php\csmarketplace\account\login\index.html" />
+    <Content Include="handy-kart.com\index.php\csmarketplace\vendor\index\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\create\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzL2NvdHRvbi1iYWdzLmh0bWw,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzL2p1dGUtYmFncy5odG1sP2NvbG9yPTU5\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzL2p1dGUtYmFncy5odG1s\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzL3BhcGVyLWJhZ3MuaHRtbA,,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzL3BsYWluLW5vbi13b3Zlbi1iYWdzLmh0bWw,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw_cHJpY2U9LTEwMA,,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw_cHJpY2U9MTAwLQ,,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw_Y29sb3I9NDk,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw_Y29sb3I9NDkmcHJpY2U9MTAwLQ,,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw_Y29sb3I9NTk,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw_Y29sb3I9NTkmcHJpY2U9LTEwMA,,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw_Y2F0PTQ2JmNvbG9yPTU5\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvb3VyLXByb2R1Y3RzLmh0bWw_Y2F0PTQ2\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvcHJpdmFjeS1wb2xpY3ktY29va2llLXJlc3RyaWN0aW9uLW1vZGU,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvcmVmdW5kLWFuZC1yZXR1cm4tcG9saWN5\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvd2lzaGxpc3Qv\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvd2lzaGxpc3Qv\indexa0e8.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvY29udGFjdC8,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvY2F0YWxvZ3NlYXJjaC9hZHZhbmNlZC9pbmRleC8,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvY2FyZWVycw,,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvY2hlY2tvdXQvY2FydC9pbmRleC8,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvY3VzdG9tZXIvYWNjb3VudC9jcmVhdGUv\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvYmFnLXRlc3QtMi5odG1s\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvYWJvdXQtdXM,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvZC13LWN1dC1jYXJyeS1iYWdzLmh0bWw,\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvZmFx\index.html" />
+    <Content Include="handy-kart.com\index.php\customer\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAv\index.html" />
+    <Content Include="handy-kart.com\index.php\d-w-cut-carry-bags.html" />
+    <Content Include="handy-kart.com\index.php\faq.html" />
+    <Content Include="handy-kart.com\index.php\faq\index.html" />
+    <Content Include="handy-kart.com\index.php\index.html" />
+    <Content Include="handy-kart.com\index.php\mobilelogin\index\ajaxforgototpverify\index.html" />
+    <Content Include="handy-kart.com\index.php\mobilelogin\index\ajaxforgot\index.html" />
+    <Content Include="handy-kart.com\index.php\our-products.html" />
+    <Content Include="handy-kart.com\index.php\our-products02a6.html" />
+    <Content Include="handy-kart.com\index.php\our-products1a67.html" />
+    <Content Include="handy-kart.com\index.php\our-products35f0.html" />
+    <Content Include="handy-kart.com\index.php\our-products38d0.html" />
+    <Content Include="handy-kart.com\index.php\our-products4e82.html" />
+    <Content Include="handy-kart.com\index.php\our-products7fc8.html" />
+    <Content Include="handy-kart.com\index.php\our-products96a4.html" />
+    <Content Include="handy-kart.com\index.php\our-productscd97.html" />
+    <Content Include="handy-kart.com\index.php\our-products\cotton-bags.html" />
+    <Content Include="handy-kart.com\index.php\our-products\cotton-bags3214.html" />
+    <Content Include="handy-kart.com\index.php\our-products\jute-bags.html" />
+    <Content Include="handy-kart.com\index.php\our-products\jute-bags3214.html" />
+    <Content Include="handy-kart.com\index.php\our-products\jute-bagscd97.html" />
+    <Content Include="handy-kart.com\index.php\our-products\jute-bagse267.html" />
+    <Content Include="handy-kart.com\index.php\our-products\paper-bags.html" />
+    <Content Include="handy-kart.com\index.php\our-products\paper-bags3214.html" />
+    <Content Include="handy-kart.com\index.php\our-products\plain-non-woven-bags.html" />
+    <Content Include="handy-kart.com\index.php\our-products\plain-non-woven-bags3214.html" />
+    <Content Include="handy-kart.com\index.php\our-products\printable-non-woven-bags.html" />
+    <Content Include="handy-kart.com\index.php\our-products\printable-non-woven-bags3214.html" />
+    <Content Include="handy-kart.com\index.php\privacy-policy-cookie-restriction-mode.html" />
+    <Content Include="handy-kart.com\index.php\privacy-policy-cookie-restriction-mode\index.html" />
+    <Content Include="handy-kart.com\index.php\refund-and-return-policy.html" />
+    <Content Include="handy-kart.com\index.php\refund-and-return-policy\index.html" />
+    <Content Include="handy-kart.com\index.php\wishlist\index.html" />
+    <Content Include="handy-kart.com\pub\media\aboutus_left_image_e9934bdcae9a9e7a408547adfca6b351.jpg" />
+    <Content Include="handy-kart.com\pub\media\captcha\base\0a5792e8572639608b21eaac3b85a8c5.png" />
+    <Content Include="handy-kart.com\pub\media\captcha\base\5de37bf29265d03770ea96942eb5b979.png" />
+    <Content Include="handy-kart.com\pub\media\captcha\base\76d9cb07832158db6ef8f497f07c37ea.png" />
+    <Content Include="handy-kart.com\pub\media\catalog\category\cat_2_546623992c77f45573b768936a0b111b.jpg" />
+    <Content Include="handy-kart.com\pub\media\catalog\category\cat_3_6f049591161b18ba7c1eed42d9382716.jpg" />
+    <Content Include="handy-kart.com\pub\media\catalog\category\cat_4_35704ead3d4d0df73316b7ac02071e35.jpg" />
+    <Content Include="handy-kart.com\pub\media\catalog\category\cat_5_70a63d7fc1a4ac9a0d10232a95e9268c.jpg" />
+    <Content Include="handy-kart.com\pub\media\catalog\category\plain-non-woven-bag_fbc6852d0814a2863028fd4c951f80aa.jpg" />
+    <Content Include="handy-kart.com\pub\media\catalog\product\cache\2765542505660baab28ecd555e27366e\c\r\cropped8836218117357368234.jpg" />
+    <Content Include="handy-kart.com\pub\media\catalog\product\cache\2765542505660baab28ecd555e27366e\d\o\download_11__1.jpg" />
+    <Content Include="handy-kart.com\pub\media\catalog\product\cache\3fba745dcec88e97bfe808bedc471260\d\o\download_11__1.jpg" />
+    <Content Include="handy-kart.com\pub\media\favicon\stores\1\logo_handykart-optimizedfaviob.png" />
+    <Content Include="handy-kart.com\pub\media\logo\stores\1\logo_handykart-optimizedfavion_5c681ceaacfe54111f8ecab8cffdefdb.png" />
+    <Content Include="handy-kart.com\pub\media\logo_handykart-150.png" />
+    <Content Include="handy-kart.com\pub\media\mageplaza\bannerslider\banner\image\b\a\bag-banner-1_1_.png" />
+    <Content Include="handy-kart.com\pub\media\mageplaza\bannerslider\banner\image\b\a\bag-banner2_1_.png" />
+    <Content Include="handy-kart.com\pub\media\next_arrow.png" />
+    <Content Include="handy-kart.com\pub\media\personalized\resized\500\d\o\download_10__1.png" />
+    <Content Include="handy-kart.com\pub\media\personalized\resized\500\d\o\download_11__1.jpg" />
+    <Content Include="handy-kart.com\pub\media\prev_arrow.png" />
+    <Content Include="handy-kart.com\pub\media\styles.html" />
+    <Content Include="handy-kart.com\pub\media\why_choose_us_1.png" />
+    <Content Include="handy-kart.com\pub\media\why_choose_us_2.png" />
+    <Content Include="handy-kart.com\pub\media\why_choose_us_3.png" />
+    <Content Include="handy-kart.com\pub\media\wysiwyg\plain.jpg" />
+    <Content Include="handy-kart.com\pub\media\wysiwyg\smooth-service.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\font-awesome\css\font-awesome.min.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\font-awesome\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\metisMenu\dist\metisMenu.min.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\morrisjs\morris.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\csmarketplace\fancybox_loading.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\csmarketplace\fonts\Simple-Line-Iconsb26c.svg" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\csmarketplace\vpanel.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\fonts\admin-icons\admin-icons.svg" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\dist\css\sb-admin-2.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\dist\css\timeline.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\dist\images\validation_advice_bg.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\dist\js\jquery.min.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\images\new-recaptcha.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\js\ced\csmarketplace\noconflict.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\requirejs\require.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\facebook\button.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\facebook\images\social_connect_fb.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\facebook\images\social_disconnect_fb.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\google\button.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\google\images\social_connect_go.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\google\images\social_disconnect_go.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\linkedin\button.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\linkedin\images\social_connect_linkedin.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\linkedin\images\social_disconnect_linkedin.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\styles.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\twitter\button.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\twitter\images\social_connec_twitter.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_VendorsocialLogin\css\twitter\images\social_disconnec_twitter.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\css\print.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\css\styles-l.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\css\styles-m.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\images\loader-2.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\css\intlTelInput.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\css\isValidNumber.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\css\prism.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\css\styles.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\images\ajax-loader.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\images\icons.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\img\flags%402x.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\img\flags.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\js\intlTelInput.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\js\prism.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\js\utils.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magento_Braintree\images\paypal-small.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magento_ProductVideo\img\gallery-sprite.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_BannerSlider\css\animate.min.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_BannerSlider\css\bannerslider.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\font-awesome.min.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.svg" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\grid-mageplaza.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\magnific-popup.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\owl.carousel.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\owl.theme.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\owl.video.play.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\images\ajax-loader.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\images\create-account-title.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\images\disqus-logo.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\images\forgot-pass-title.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\images\g-logo.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\images\live-logo.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\images\login-title.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\images\mailru-logo.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_SocialLogin\css\style.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\mage\calendar.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\mage\polyfill.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\mage\requirejs\mixins.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Milople_Personalizedcool\css\lightbox.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Milople_Personalizedcool\images\arrow.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Milople_Personalizedcool\js\cart-mini.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Milople_Personalizedcool\js\responsiveslides.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\requirejs-config.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\requirejs\require.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Sunarc_CsProduct\css\styles.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_PincodeChecker\images\loader.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\facebook\button.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\facebook\images\social_connect_fb.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\facebook\images\social_disconnect_fb.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\google\button.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\google\images\social_connect_go.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\google\images\social_disconnect_go.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\linkedin\button.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\linkedin\images\social_connect_linkedin.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\linkedin\images\social_disconnect_linkedin.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\styles.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\twitter\button.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\twitter\images\social_connec_twitter.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Ced_VendorsocialLogin\css\twitter\images\social_disconnec_twitter.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\css\handykart.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\css\print.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\css\slick-theme.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\css\slick.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\css\styles-l.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\css\styles-m.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\images\image_reviews.jpg" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\images\loader-1.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\images\loader-2.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\images\select-bg.svg" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\js\custom_js.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\css\intlTelInput.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\css\isValidNumber.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\css\prism.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\css\styles.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\images\ajax-loader.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\images\icons.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\img\flags%402x.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\img\flags.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\js\intlTelInput.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\js\prism.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\js\utils.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magento_Braintree\images\paypal-small.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magento_ProductVideo\img\gallery-sprite.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_BannerSlider\css\animate.min.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_BannerSlider\css\bannerslider.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\font-awesome.min.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.svg" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\grid-mageplaza.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\magnific-popup.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\owl.carousel.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\owl.theme.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\owl.video.play.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\images\ajax-loader.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\images\create-account-title.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\images\disqus-logo.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\images\forgot-pass-title.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\images\g-logo.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\images\live-logo.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\images\login-title.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\images\mailru-logo.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_SocialLogin\css\style.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\mage\calendar.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\mage\gallery\gallery.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\mage\gallery\gallery.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\mage\polyfill.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\mage\requirejs\mixins.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\css\carousel.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\css\fontconfig.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\css\jcrop.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\css\lightbox.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\css\owl.video.play.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\css\personalized.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\fonts\milople-personalizer-tool.svg" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\arrow.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\bold.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\Cancel.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\CancelRed.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\center-align.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\clean.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\decrease.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\delete_icon.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\duplicate_icon.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\increase.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\italic.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\Jcrop.gif" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\left-align.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\Ok.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\OkGreen.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\popup-delete.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\popup-done.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\resize_icon.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\right-align.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\rotate_icon.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\images\underline.png" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\carousel.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\cart-mini.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\customiseControls.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\fabric.curvedText.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\fonts.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\jcrop.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\personalized.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\personalized_based.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\piklor.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\js\responsiveslides.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Prince_Buynow\css\buynow.css" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\requirejs-config.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\requirejs\require.js" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Sunarc_CsProduct\css\styles.css" />
+    <Content Include="hts-cache\new.lst" />
+    <Content Include="hts-cache\new.txt" />
+    <Content Include="hts-cache\readme.txt" />
+    <Content Include="hts-log.txt" />
+    <Content Include="index.html" />
+    <Content Include="use.fontawesome.com\releases\v5.2.0\css\all.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handy-kart.com\index.php\personalizedcool\index\index" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\font-awesome\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\font-awesome\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\font-awesome\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\font-awesome\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\bower_components\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\csmarketplace\fonts\Simple-Line-Iconsb26c.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\csmarketplace\fonts\Simple-Line-Iconsb26c.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\csmarketplace\fonts\Simple-Line-Iconsb26c.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\csmarketplace\fonts\Simple-Line-Iconsb26c.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\fonts\admin-icons\admin-icons.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\fonts\admin-icons\admin-icons.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\fonts\admin-icons\admin-icons.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\fonts\admin-icons\admin-icons.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Ced_CsMarketplace\css\ced\fonts\admin-icons\admin-iconsd41d.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\Blank-Theme-Icons\Blank-Theme-Icons.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\Blank-Theme-Icons\Blank-Theme-Icons.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\opensans\bold\opensans-700.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\opensans\bold\opensans-700.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\opensans\light\opensans-300.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\opensans\light\opensans-300.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\opensans\regular\opensans-400.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\opensans\regular\opensans-400.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\opensans\semibold\opensans-600.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\fonts\opensans\semibold\opensans-600.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\font\Montserrat-Bold.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Magecomp_Mobilelogin\font\Montserrat-Regular.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\Ced\ced\en_US\Mageplaza_Core\css\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\Luma-Icons.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\Luma-Icons.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\opensans\bold\opensans-700.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\opensans\bold\opensans-700.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\opensans\light\opensans-300.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\opensans\light\opensans-300.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\opensans\regular\opensans-400.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\opensans\regular\opensans-400.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\opensans\semibold\opensans-600.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\opensans\semibold\opensans-600.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\roboto-regular.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\fonts\TOMATOES.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\font\Montserrat-Bold.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Magecomp_Mobilelogin\font\Montserrat-Regular.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\fonts\fontawesome-webfont5b62.woff2" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Mageplaza_Core\css\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\fonts\IconFont.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\fonts\IconFont.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\fonts\IconFont.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\fonts\milople-personalizer-tool.eot" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\fonts\milople-personalizer-tool.ttf" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\fonts\milople-personalizer-tool.woff" />
+    <Content Include="handy-kart.com\pub\static\frontend\HandyKart\luma_child\en_US\Milople_Personalizedcool\fonts\milople-personalizer-toold41d.eot" />
+    <Content Include="hts-cache\doit.log" />
+    <Content Include="hts-cache\new.zip" />
+    <Content Include="hts-cache\winprofile.ini" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="handy-kart.com\index.php\csmarketplace\account\login\referer\aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvY3N\frontend\base\default\images\ced\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60589</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44328/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

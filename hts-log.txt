@@ -1,0 +1,37 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 24 Feb 2020 11:55:09 at https://handy-kart.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://handy-kart.com/ -O1 "C:\My Web Sites\ARREco" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:55:54	Error: 	"Not Found" (404) at link https://handy-kart.com/pub/media/styles.css (from https://handy-kart.com/)
+11:56:11	Warning: 	Found for https://handy-kart.com/index.php/csmarketplace/vendor/index/
+11:56:11	Warning: 	File has moved from https://handy-kart.com/index.php/csmarketplace/vendor/index/ to https://handy-kart.com/index.php/csmarketplace/account/login/
+11:56:15	Warning: 	Moved Permanently for https://handy-kart.com/index.php/about-us/
+11:56:15	Warning: 	File has moved from https://handy-kart.com/index.php/about-us/ to https://handy-kart.com/index.php/about-us
+11:56:17	Warning: 	Moved Permanently for https://handy-kart.com/index.php/privacy-policy-cookie-restriction-mode/
+11:56:17	Warning: 	File has moved from https://handy-kart.com/index.php/privacy-policy-cookie-restriction-mode/ to https://handy-kart.com/index.php/privacy-policy-cookie-restriction-mode
+11:56:17	Warning: 	Moved Permanently for https://handy-kart.com/index.php/refund-and-return-policy/
+11:56:17	Warning: 	File has moved from https://handy-kart.com/index.php/refund-and-return-policy/ to https://handy-kart.com/index.php/refund-and-return-policy
+11:56:18	Warning: 	Moved Permanently for https://handy-kart.com/index.php/faq/
+11:56:18	Warning: 	File has moved from https://handy-kart.com/index.php/faq/ to https://handy-kart.com/index.php/faq
+11:56:42	Warning: 	Found for https://handy-kart.com/index.php/wishlist/
+11:56:42	Warning: 	File has moved from https://handy-kart.com/index.php/wishlist/ to https://handy-kart.com/index.php/customer/account/login/referer/aHR0cHM6Ly9oYW5keS1rYXJ0LmNvbS9pbmRleC5waHAvd2lzaGxpc3Qv/?SID=745089c4a60dd54a43b283606a4049b9
+11:57:12	Warning: 	Retry after error 500 (Internal Server Error) at link https://handy-kart.com/index.php/personalizedcool/index/index (from https://handy-kart.com/index.php/bag-test-2.html)
+11:57:40	Error: 	"Not Found" (404) at link https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/images/Jcrop.gif (from https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/css/jcrop.css)
+11:57:40	Error: 	"Not Found" (404) at link https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/images/Ok.png (from https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/css/jcrop.css)
+11:57:40	Error: 	"Not Found" (404) at link https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/images/OkGreen.png (from https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/css/jcrop.css)
+11:57:40	Error: 	"Not Found" (404) at link https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/images/Cancel.png (from https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/css/jcrop.css)
+11:57:40	Error: 	"Not Found" (404) at link https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/images/CancelRed.png (from https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/css/jcrop.css)
+11:57:40	Error: 	"Not Found" (404) at link https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/css/owl.video.play.png (from https://handy-kart.com/pub/static/frontend/HandyKart/luma_child/en_US/Milople_Personalizedcool/css/carousel.css)
+11:57:40	Warning: 	Retry after error 500 (Internal Server Error) at link https://handy-kart.com/index.php/personalizedcool/index/index (from https://handy-kart.com/index.php/bag-test-2.html)
+11:57:42	Error: 	"Not Found" (404) at link https://handy-kart.com/pub/static/frontend/Ced/ced/en_US/Ced_CsMarketplace/css/ced/csmarketplace/fancybox_loading.gif (from https://handy-kart.com/pub/static/frontend/Ced/ced/en_US/Ced_CsMarketplace/css/ced/csmarketplace/vpanel.css)
+11:57:44	Warning: 	Retry after error 500 (Internal Server Error) at link https://handy-kart.com/index.php/mobilelogin/index/ajaxforgototpverify/ (from https://handy-kart.com/index.php/csmarketplace/account/forgotpassword/)
+11:57:45	Error: 	"Internal Server Error" (500) after 2 retries at link https://handy-kart.com/index.php/personalizedcool/index/index (from https://handy-kart.com/index.php/bag-test-2.html)
+11:57:50	Warning: 	Retry after error 500 (Internal Server Error) at link https://handy-kart.com/index.php/mobilelogin/index/ajaxforgototpverify/ (from https://handy-kart.com/index.php/csmarketplace/account/forgotpassword/)
+11:57:56	Error: 	"Internal Server Error" (500) after 2 retries at link https://handy-kart.com/index.php/mobilelogin/index/ajaxforgototpverify/ (from https://handy-kart.com/index.php/csmarketplace/account/forgotpassword/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 26 seconds : 430 links scanned, 409 files written (22151149 bytes overall) [17622969 bytes received at 66251 bytes/sec], 5945202 bytes transferred using HTTP compression in 74 files, ratio 19%, 4.7 requests per connection
+(10 errors, 16 warnings, 0 messages)
